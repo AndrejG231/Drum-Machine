@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum machine</title>
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Ajax -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap js -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- App -->
+    <script src="./app.js" defer></script>
+    <!-- FreeCodeCamp test script -->
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <main
+      id="drum-machine"
+      class="container d-flex flex-column"
+      style="height: 100vh"
+    >
+      <h1 class="text-center mt-5">Drum machine</h1>
+      <p class="text-right">Playing: <span id="display"></span></p>
+      <div id="display" class="w-75 h-75 mx-auto mt-3 pt-5">
+        <div class="row h-25">
+          <button class="col-sm drum-pad" id="q">
+            Q
+            <audio
+              class="clip"
+              id="Q"
+              preload="auto"
+              src="https://audio-previews.elements.envatousercontent.com/files/345768204/preview.mp3"
+            ></audio>
+          </button>
+          <button class="col-sm drum-pad" id="w">
+            W
+            <audio
+              class="clip"
+              id="W"
+              preload="auto"
+              src="https://assets.mixkit.co/sfx/preview/mixkit-fast-small-sweep-transition-166.mp3"
+            ></audio>
+          </button>
+          <button class="col-sm drum-pad" id="e">
+            E
+            <audio
+              class="clip"
+              id="E"
+              preload="auto"
+              src="https://assets.mixkit.co/sfx/preview/mixkit-arcade-retro-game-over-213.mp3"
+            ></audio>
+          </button>
+        </div>
+        <div class="row h-25">
+          <button class="col-sm drum-pad" id="a">
+            A
+            <audio
+              class="clip"
+              id="A"
+              preload="auto"
+              src="https://assets.mixkit.co/sfx/preview/mixkit-dog-barking-twice-1.mp3"
+            ></audio>
+          </button>
+          <button class="col-sm drum-pad" id="s">
+            S
+            <audio
+              class="clip"
+              id="S"
+              preload="auto"
+              src="https://assets.mixkit.co/sfx/preview/mixkit-drum-and-percussion-545.mp3"
+            ></audio>
+          </button>
+          <button class="col-sm drum-pad" id="d">
+            D
+            <audio
+              class="clip"
+              id="D"
+              preload="auto"
+              src="https://assets.mixkit.co/sfx/preview/mixkit-tribal-dry-drum-558.mp3"
+            ></audio>
+          </button>
+        </div>
+        <div class="row h-25">
+          <button class="col-sm drum-pad" id="z">
+            Z
+            <audio
+              class="clip"
+              id="Z"
+              preload="auto"
+              src="https://assets.mixkit.co/sfx/preview/mixkit-tribal-deep-drum-echoes-575.mp3"
+            ></audio>
+          </button>
+          <button class="col-sm drum-pad" id="x">
+            X
+            <audio
+              class="clip"
+              id="X"
+              preload="auto"
+              src="https://assets.mixkit.co/sfx/preview/mixkit-short-guitar-strum-2318.mp3"
+            ></audio>
+          </button>
+          <button class="col-sm drum-pad" id="c">
+            C
+            <audio
+              class="clip"
+              id="C"
+              preload="auto"
+              src="https://assets.mixkit.co/sfx/preview/mixkit-arabian-mystery-harp-notification-2489.mp3"
+            ></audio>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
